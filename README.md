@@ -51,3 +51,8 @@
     git pull origin main
 #### branchの削除
     git branch -d back-btn#27
+    
+    
+# 6. 便利コマンド
+#### logの表示(branchの場所が分かる)
+    git log --oneline --decorate
