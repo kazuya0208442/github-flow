@@ -15,7 +15,7 @@
     
 # 3. branch を切って作業
 #### 「-b」をつけると、ブランチを作成すると同時にそのブランチに移動する。isuue番号をbranch名に含める。
-    git git checkout -b back-btn#27
+    git checkout -b back-btn#27
 #### 変更したファイルの一覧を確認
     git status
 #### 差分の確認
