@@ -60,3 +60,6 @@
 # 6. 便利コマンド
 #### logの表示(branchの場所が分かる)
     git log --oneline --decorate
+    
+#### dpcker-compose の app コンテナに入ってコマンドを実行
+    docker-compose exec app sh
