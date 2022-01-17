@@ -63,3 +63,9 @@
     
 #### dpcker-compose の app コンテナに入ってコマンドを実行
     docker-compose exec app sh
+
+#### dpcker-compose コンテナの停止(down にすると、コンテナも削除される)
+    docker-compose stop
+    
+#### dpcker-compose dockerfile の build からやり直してくれるコマンド
+    docker-compose up --build
