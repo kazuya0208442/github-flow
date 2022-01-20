@@ -69,3 +69,7 @@
     
 #### dpcker-compose dockerfile の build からやり直してくれるコマンド
     docker-compose up --build
+
+#### test.py の実行は、コンテナの中に入って行う。method名は'test'で始まる必要あり。
+    docker-compose exec app sh   
+    python manage.py test
