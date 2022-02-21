@@ -66,10 +66,19 @@
 
 #### dpcker-compose コンテナの停止(down にすると、コンテナも削除される)
     docker-compose stop
-    
+
+#### deploy 用の dpcker-compose コンテナの停止(down にすると、コンテナも削除される)
+    docker-compose stop -f docker-compose-deploy.yml stop
+
 #### dpcker-compose dockerfile の build からやり直してくれるコマンド
     docker-compose up --build
+
+#### deploy 用の dpcker-compose dockerfile の build からやり直してくれるコマンド
+    docker-compose stop -f docker-compose-deploy.yml up --build
 
 #### test.py の実行は、コンテナの中に入って行う。method名は'test'で始まる必要あり。
     docker-compose exec app sh   
     python manage.py test
+
+#### deploy用のproxy コンテナに入ってコマンドを実行(nginxのalpine image)
+    docker-compose -f docker-compose-deploy.yml exec proxy sh
